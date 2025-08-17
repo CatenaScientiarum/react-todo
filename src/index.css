@@ -1,0 +1,10 @@
+body {
+margin: 0;
+background-color: #181824;
+color: white;
+font-family: 'Arial', sans-serif;
+}
+* {
+box-sizing: border-box;
+}
+
