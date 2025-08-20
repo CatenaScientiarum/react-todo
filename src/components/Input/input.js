@@ -1,15 +1,16 @@
 import './input.css';
-const Input = (props) => {
-const {name, onChange, value, placeholder} = props;
-return (
-<input
-className={'input'}
-name={name}
-type="text"
-onChange={onChange}
-value={value}
-placeholder={placeholder ? placeholder: ''}
-/>
-);
+const Input = ({ id, name, onChange, value, placeholder, ...rest }) => {
+  return (
+    <input
+      id={id}
+      className={'input'}
+      name={name}
+      type="text"
+      onChange={onChange}
+      value={value}
+      placeholder={placeholder || ''}
+      {...rest}
+    />
+  );
 };
 export default Input;

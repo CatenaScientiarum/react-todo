@@ -1,7 +1,40 @@
-.app .title-wrap {
-margin-bottom: 90px;
-}
 .app .form-wrap {
 margin-bottom: 20px;
-width: 100%;
-}
+width: 100%; }
+
+.app .title-wrap { 
+	margin-bottom: 24px; }
+
+.controls { 
+	display:flex; 
+	gap:12px; align-items:center; 
+	margin-bottom:16px; }
+
+.control-group { 
+	display:flex; 
+	gap:8px; 
+	align-items:center; }
+
+.control-group label { 
+	color: rgba(255,255,255,0.7); 
+	font-size:14px; }
+
+.control-group select, .control-group .small { 
+	min-width: 120px; }
+
+.control-group.grow { 
+	margin-left:auto; }
+
+.small { 
+	padding:6px 10px; 
+	font-size:14px; 
+	background:#2e3245; 
+	border:none; 
+	color:#fff; 
+	cursor:pointer; }
+
+.empty { 
+	padding:20px; 
+	background:#222435; 
+	border-radius:6px; 
+	color:rgba(255,255,255,0.6); }

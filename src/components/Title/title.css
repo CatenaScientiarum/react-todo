@@ -1,6 +1,15 @@
 .title {
-font-weight: 400;
-font-size: 96px;
-letter-spacing: 0.1em;
-margin: 0;
+  font-weight: 600;
+  font-size: 64px;           
+  letter-spacing: 0.06em;
+  margin: 0;
+  line-height: 1;
+  color: #ffffff;
+
+  background: linear-gradient(90deg, #262222, #80c6ff 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }

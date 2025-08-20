@@ -1,17 +1,129 @@
 .todo-list-item {
-color: rgba(255, 255, 255, 0.7);
-font-size: 24px;
-display: flex;
-align-items: center;
-padding-top: 10px;
-padding-bottom: 10px;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #232533;
+  padding: 16px;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-.todo-list-item .actions {
-margin-left: 26px;
-flex-shrink: 0;
+.todo-list-item .left {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
 }
-.todo-list-item .content {
-flex-grow: 1;
+
+.todo-list-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 6px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.text {
+  font-size: 18px;
+  word-break: break-word;
+}
+
+.text.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.priority {
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.priority.high {
+  background: #ffb3b3;
+  color: #7a0505;
+}
+
+.priority.medium {
+  background: #ffdba8;
+  color: #5a3b00;
+}
+
+.priority.low {
+  background: #d8ffd8;
+  color: #024a05;
+}
+
+.deadline {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 4px 8px;
+  background: #2b2f41;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.edit-input,
+.edit-textarea {
+  padding: 8px;
+  background: #2a2d3f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.edit-input {
+  font-size: 16px;
+  min-width: 220px;
+}
+
+.edit-textarea {
+  min-height: 60px;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.task-desc {
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  max-width: 70ch;
+  white-space: pre-wrap;
+}
+
+.item-error {
+  color: #ffb3b3;
+  margin-top: 6px;
+  font-size: 13px;
 }

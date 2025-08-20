@@ -1,7 +1,77 @@
+:root {
+  --title-start: #ffffff;
+  --title-end: #cfe9ff;
+  --bg-opacity: 0.06;
+}
+
 .form {
-display: flex;
+  display: flex;
 }
+
 .form .action {
-margin-left: 20px;
-flex: 0 0 20%;
+  margin-left: 20px;
+  flex: 0 0 20%;
 }
+
+.form-extended {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  align-items: start;
+  grid-template-columns: 1fr; /* Можна змінити на '1fr auto' при потребі */
+}
+
+.form-extended .action {
+  display: flex;
+  align-items: center;
+}
+
+.small-inputs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+.input {
+  background: #25273C;
+  border: none;
+  min-height: 50px;
+  padding: 10px 14px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.input.small-input {
+  min-height: 40px;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.main-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textarea-desc {
+  min-height: 72px;
+  resize: vertical;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.small-inputs-and-action {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-error {
+  margin-top: 8px;
+  color: #ffb3b3;
+  font-size: 14px;
+}
+
